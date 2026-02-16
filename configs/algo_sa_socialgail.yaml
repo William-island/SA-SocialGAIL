@@ -1,0 +1,46 @@
+# training parameters
+num_steps: 1500_000
+rollout_length: 2048
+eval_interval: 5000
+
+env_id: "CrowdEnv"
+
+# hardware parameters
+cuda: true
+seed: 0
+cuda_device: "cuda:0"
+
+# algorithm parameters
+regions: 16
+radius: 25.0 # changed
+with_last_speed: false
+entity_type: false
+observation_type: 'graph'
+graph_obs_past_len: 5
+padd_to_number: 2 # changed
+graph_feature_len: 5
+output_len: 2
+
+# env parameters
+agent_radius: 0.25
+target_circle_width: 0.5 # changed
+relaxed_steps: 0  # changed, must be zero
+
+
+# latent code parameters
+reward_us_coef: 0.1 # 0.5 # 1.0 # 0.1
+auto_balancing: True
+
+latent_code:
+  speed:
+    type: categorical
+    dim: 2
+    feature_dim: 1
+    store_dim: 1 # stored by the env
+
+  # social_comfort:
+  #   type: categorical
+  #   dim: 2
+  #   feature_dim: 1   # compute by the extra_social_comfort function
+  #   store_dim: 1 # stored by the env
+

@@ -1,0 +1,9 @@
+/logs/
+__pycache__/
+expert_demos/
+*.pkl
+*.pt
+datasets_origin/
+*.pth
+*.mp4
+/nohup_logs/
