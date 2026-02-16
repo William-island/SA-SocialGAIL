@@ -1,0 +1,21 @@
+
+GC:
+  dataset_path: "./core/crowd_env/datasets/GC/GC.pkl"
+  buffer: './core/crowd_env/datasets/GC/GC_graph_demos.pth'
+  frame_interval: 10     # 10
+  time_interval: 0.4   # 0.4
+  map_size_bound: [-10,40,-20,50]
+  max_trajectory_length: 2000
+  scale_factor: 2
+
+
+
+
+synthetic_w_speed:
+  dataset_path: "./core/crowd_env/datasets/synthetic_w_speed/synthetic_w_speed.pkl"
+  buffer: './core/crowd_env/datasets/synthetic_w_speed/synthetic_w_speed_demos.pth' 
+  frame_interval: 1     
+  time_interval: 0.4   
+  map_size_bound: [-20,20,-2,2]
+  max_trajectory_length: 100
+  scale_factor: 4
