@@ -1,7 +1,5 @@
 # SA-SocialGAIL
 
-# SA-SocialGAIL
-
 This repository implements a GNN-based GAIL framework with disentangled latent codes to capture social behaviors such as speed and comfort in dense crowds.
 
 
@@ -127,12 +125,12 @@ Please prepare your datasets and update the corresponding YAML entries:
 ```yaml
 GC:
   dataset_path: ./datasets/gc_interpolated_trajectory.pkl
-  scale_factor: 1.0
+  scale_factor: 2.0
   # other environment-specific parameters...
 
 synthetic_w_speed:
   dataset_path: ./datasets/synthetic_speed.pkl
-  scale_factor: 1.0
+  scale_factor: 4.0
   # ...
 ```
 
